@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 #define S 4
 #define N 50
 void serch(char name[][N],char hometown[][N],int result[]);
