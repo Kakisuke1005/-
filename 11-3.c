@@ -11,7 +11,7 @@ typedef struct{
 
 int main()
 {
-  int sum[NUM],max,min,allsum=0,i;
+  int sum[NUM],max,min,all_sum=0,i;
   double ave;
   STUDENT gakusei[NUM];
   for(i=0;i<NUM;i++){
@@ -24,11 +24,11 @@ int main()
     printf("物理の点数は?:");
     scanf("%d",&gakusei[i].phy);
     sum[i]=gakusei[i].math+gakusei[i].eng+gakusei[i].phy;
-    allsum+=sum[i];
+    all_sum+=sum[i];
   }
   max=get_max(sum);
   min=get_min(sum);
-  ave=(double)allsum/NUM;
+  ave=(double)all_sum/NUM;
   printf("\n学生番号 数学 英語 物理 合計\n");
   for(i=0;i<NUM;i++){
     printf(" %6d  %3d  %3d  %3d  %3d\n",gakusei[i].id,gakusei[i].math,gakusei[i].eng,gakusei[i].phy,sum[i]);
