@@ -1,8 +1,8 @@
 #include<stdio.h>
 #define N 10
 #define M 10
-void average_calc(int data[][2], double mean[], int no);
-int max_calc(double mean[], int no);
+void average_calc(int data[][2], double mean[], int num);
+int max_calc(double mean[], int num);
 int main()
 {
   int data[N][2],num,i,j,max_num;
@@ -54,7 +54,7 @@ int main()
   return 0;
 }
 
-void average_calc(int data[][2], double mean[], int no)
+void average_calc(int data[][2], double mean[], int num)
 {
   int i,j,sum;
   for(i=0;i<no;i++){
@@ -66,7 +66,7 @@ void average_calc(int data[][2], double mean[], int no)
   }
 }
 
-int max_calc(double mean[], int no)
+int max_calc(double mean[], int num)
 {
   int max=0,i,num;
   for(i=0;i<no;i++){
