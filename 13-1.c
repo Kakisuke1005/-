@@ -24,7 +24,7 @@ int main()
 	}
 	scanf("%d",&data[i][j]);
 	if((data[i][j]>100)||(data[i][j]<0)){
-	    printf("入力データが100を超えているか負です\n");
+	  printf("入力データが100を超えているか負です\n");
 	}
       }while((data[i][j]>100)||(data[i][j]<0));
     }
